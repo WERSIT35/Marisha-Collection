@@ -1,0 +1,92 @@
+:root{
+    --color-color1:hsl(0, 0%, 19%);
+    --colortxt-color1:hsl(0, 0%, 100%);
+    --colortxt-color2:hsl(0, 0%, 46%);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Oswald', sans-serif;
+}
+.logo{
+    width: 60px;
+    padding: 10px;
+}
+.logo-marisha{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.navi{
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-color1);
+}
+.navi a{
+    color: var(--colortxt-color1);
+    text-decoration: none;
+    padding: 15px 30px;
+    transform: translateX(-9%);
+    transition: 0.3s;
+}
+.head{
+    width: 100%;
+    position: absolute;
+    background-color: hsla(0, 0%, 50%, 0.148);
+}
+.navi a:hover{
+    background-color:var(--colortxt-color2) ;
+}
+.cover{
+    position: relative;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+.cover img{
+    width: 100%;
+    background-color: var(--colortxt-color2);
+}
+.shop{
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.shop img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+.col{
+    padding: 20px;
+}
+footer{
+    color: var(--colortxt-color1);
+    background-color: var(--color-color1);
+}
+.logo-image img{
+    width: 80px;
+    padding: 15px;
+}
+.pages{
+    display: flex;
+    flex-direction: column;
+}
+.pages a{
+    color: var(--colortxt-color1);
+    text-decoration: none;
+    transition: 0.3s;
+}
+.pages a:hover{
+    filter: drop-shadow(10px 5px 2px black);
+}
+.rows{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
