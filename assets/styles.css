@@ -30,15 +30,15 @@ body{
     text-decoration: none;
     padding: 15px 30px;
     transform: translateX(-9%);
-    transition: 0.3s;
+    transition: 0.5s;
 }
+.navi a:hover{
+    background-color:var(--colortxt-color2) ;
+} 
 .head{
     width: 100%;
     position: absolute;
     background-color: hsla(0, 0%, 50%, 0.148);
-}
-.navi a:hover{
-    background-color:var(--colortxt-color2) ;
 }
 .cover{
     position: relative;
@@ -49,6 +49,8 @@ body{
 .cover img{
     width: 100%;
     background-color: var(--colortxt-color2);
+    transition: 0.5s;
+    /* filter: brightness(90%); */
 }
 .shop{
     display: flex;
