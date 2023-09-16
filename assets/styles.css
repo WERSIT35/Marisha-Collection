@@ -11,14 +11,20 @@ body{
     font-family: 'Libre Baskerville', serif;
     font-family: 'Oswald', sans-serif;
 }
+.mari{
+    transform: translateX(12px);
+    letter-spacing: 5px;
+}
 .logo{
-    width: 60px;
+    width: 4%;
     padding: 10px;
+    transform: translateX(12px);
 }
 .logo-marisha{
     display:flex;
     align-items: center;
     justify-content: center;
+
 }
 .navi{
     display: flex;
@@ -29,7 +35,6 @@ body{
     color: var(--colortxt-color1);
     text-decoration: none;
     padding: 15px 30px;
-    transform: translateX(-9%);
     transition: 0.5s;
 }
 .navi a:hover{
@@ -42,6 +47,8 @@ body{
 }
 .cover{
     position: relative;
+    display: flex;
+    justify-content: center;
     top: 0;
     width: 100%;
     z-index: -1;
@@ -50,7 +57,6 @@ body{
     width: 100%;
     background-color: var(--colortxt-color2);
     transition: 0.5s;
-    /* filter: brightness(90%); */
 }
 .shop{
     display: flex;
@@ -91,4 +97,101 @@ footer{
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
+}
+.for-animate{
+    animation: 2s animator ease-out forwards;
+    display:flex;
+    justify-content: space-around;
+}
+.text1{
+    position: absolute;
+    letter-spacing: 3px;
+    font-size: 30px;
+    font-family: 'Tangerine', cursive;
+    top: 72%;
+    left: 8%;
+    filter: drop-shadow(7px 5px 2px  grey);
+    display:none;
+}
+.text2{
+    position: absolute;
+    letter-spacing: 3px;
+    font-size: 30px;
+    font-family: 'Tangerine', cursive;
+    top: 72%;
+    left: 80%;
+    filter: drop-shadow(7px 5px 2px  grey);
+    display:none;
+}
+.animate-charcter
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #000000 0%,
+    #484848 29%,
+    #a5a5a5 67%,
+    #060606 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+@keyframes animator{
+    0%{
+        opacity: 0;
+        transform: translateX(10%);
+    }100%{
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+.but{
+    top: 130%;
+    padding: 20px 10px;
+    font-size: 20px;
+    position: absolute;
+    border-style: none;
+    background-color: transparent;
+    transition: 0.3s;
+}
+.but:hover{
+    cursor: pointer;
+    background-color: hsla(0, 0%, 30%, 20%);
+}
+.left{
+    border-radius: 0% 50px 50px 0% ;
+    left: 0%;
+}
+.right{
+    border-radius: 50px 0% 0% 50px ;
+    right: 0%;
+}
+.carousel img{
+    width: 500px;
+    height: 500px;
+    top: 20%;
+    left: 0%;
+    display: flex;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+}
+.divs{
+    display: flex;
+    justify-content: center;
+    background-color: var(--colortxt-color2);
+
 }
